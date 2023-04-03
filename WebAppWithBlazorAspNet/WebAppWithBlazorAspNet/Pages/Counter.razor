@@ -1,0 +1,18 @@
+﻿@page "/counter"
+
+<PageTitle>Payment</PageTitle>
+
+<h1>Payment</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click to proceed for payment</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
